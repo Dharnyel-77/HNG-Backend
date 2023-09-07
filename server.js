@@ -9,9 +9,9 @@ const today = new Date();
 const dayOfWeek = today.getDay();
 const current_day = daysOfWeek[dayOfWeek];
 
-const github_file_url = ""
+const github_file_url = "https://github.com/Dharnyel-77/HNG-Backend/blob/main/server.js"
 
-const github_repo_url = ""
+const github_repo_url = "https://github.com/Dharnyel-77/HNG-Backend"
 
 const status_code = 200
 

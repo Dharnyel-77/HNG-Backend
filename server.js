@@ -2,7 +2,26 @@ const express = require('express');
 const app = express();
 let PORT = 9000;
 
-const utc_time = new Date()
+const currentDate = new Date(); 
+const formattedUtcTime = `${currentDate.getUTCFullYear()}-${(
+        currentDate.getUTCMonth() + 1
+      )
+        .toString()
+        .padStart(2, "0")}-${currentDate
+        .getUTCDate()
+        .toString()
+        .padStart(2, "0")}T${currentDate
+        .getUTCHours()
+        .toString()
+        .padStart(2, "0")}:${currentDate
+        .getUTCMinutes()
+        .toString()
+        .padStart(2, "0")}:${currentDate
+        .getUTCSeconds()
+        .toString()
+        .padStart(2, "0")}Z`;
+
+const utc_time = formattedUtcTime
 
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const today = new Date();

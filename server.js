@@ -36,7 +36,7 @@ const status_code = 200
 
 
 //api/info?slack_name=Daniel_&track=backend
-app.get('/api/info', (req,res)=>{
+app.get('/api', (req,res)=>{
     const { slack_name, track } = req.query;
 
     const info = {

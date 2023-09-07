@@ -1,5 +1,5 @@
 const express = require('express');
-const app = express()
+const app = express();
 let PORT = 9000;
 
 const utc_time = new Date()
